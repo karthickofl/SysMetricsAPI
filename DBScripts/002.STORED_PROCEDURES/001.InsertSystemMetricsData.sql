@@ -1,3 +1,5 @@
+USE SysMetricsDB;
+GO
 
 CREATE OR ALTER PROCEDURE dbo.InsertSystemMetricsData
     @JsonData NVARCHAR(MAX)

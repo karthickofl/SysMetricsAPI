@@ -1,3 +1,6 @@
+USE SysMetricsDB;
+GO
+
 CREATE OR ALTER PROCEDURE GetSystemMetricsData
 AS
 BEGIN

@@ -1,3 +1,6 @@
+USE SysMetricsDB;
+GO
+
 CREATE TABLE SystemDetails (
     Id INT PRIMARY KEY IDENTITY(1,1),
     IPV4Address NVARCHAR(255),
@@ -17,22 +20,3 @@ CREATE TABLE ParamMetrics (
 	CreatedOnTimestamp  DATETIME DEFAULT GETDATE(),
     IsDeleted BIT DEFAULT 0
 );
-
-SELECT GETDATE()
-select * from SystemDetails(nolock)
-select * from ParamMetrics(nolock)
-
-delete from ParamMetrics
-
-delete from SystemDetails
-
---DROP table SystemDetails
---DROP table ParamMetrics
-
-
-
-   
-
-
-delete from SystemDetails
-delete  from ParamMetrics
